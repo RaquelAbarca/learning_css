@@ -1,0 +1,30 @@
+Rules & Selectors 
+
+The style rules are defined in a CSS file using selectors.
+
+p {
+  color: red;
+} 
+
+
+
+The selector p targets all the paragraph elements of our HTML.
+
+A rule can have multiple styles, for example:
+
+p {
+   color: red;
+  font-size: 42px;
+}
+
+
+
+Multiple Selectors 
+ 
+We can target multiple selectors at once, by separating the selectors with a comma.
+
+For example, let's make all h1 headings and paragraphs red:
+
+h1, p {
+  color: red;
+}s

@@ -1,0 +1,40 @@
+Class Selector 
+ 
+
+So far we have seen element selectors, which use the element names and target all of them in the HTML.
+
+Often we need to target only a subset of elements, without changing the others. This can be done using a class selector.
+
+We first need to add a class attribute to the elements we want to target:
+
+<p class="intro">CSS is awesome</p>
+<p>some other text goes here</p>
+
+
+Class Selector 
+
+Now, we can create the class selector in CSS:
+
+.intro {
+  color: red;
+  background-color: yellow;
+}
+
+Note, that the class selector needs to start with a dot, followed by the class name that we gave to our element.
+You can apply the .intro style rule to any element on your page, by simply adding the class attribute.
+
+
+
+Selectors  
+
+We can also create selectors based on the id attribute of elements.
+This is done by using the hash (#) symbol before the id value:
+
+#intro {
+  color: red;
+  background-color: yellow;
+}  
+
+This will target the element with id="intro" in our HTML.
+
+You can have only one element with the same id on the page, while the class value can be used multiple times.
