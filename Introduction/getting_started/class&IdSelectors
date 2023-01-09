@@ -36,5 +36,33 @@ This is done by using the hash (#) symbol before the id value:
 }  
 
 This will target the element with id="intro" in our HTML.
-
 You can have only one element with the same id on the page, while the class value can be used multiple times.
+
+
+We can also target elements based on their location.
+For example, there are two <strong> elements, one inside a paragraph and the other inside a list item.
+We can target only the one inside the list item by using the following rule:
+
+li strong {
+  color: purple;
+} 
+
+The space denotes that the <strong> element needs to be inside an <li> element.
+
+
+
+
+
+Style Inheritance 
+ 
+
+CSS styles set on parent elements are inherited by the child elements.
+
+For example, if you set a color and font on an element, every element inside it will also be styled with that color and font, unless you've applied different color and font values directly to them:
+
+header {
+  color: red;
+  font-size: 24px;
+}
+
+Not all styles are inherited, like the width and other similar layout properties.

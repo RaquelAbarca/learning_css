@@ -1,0 +1,24 @@
+color: to change the color of the text.
+
+.intro {
+  color: red;
+}
+
+.intro {
+    color: #47759b;
+ }
+
+ .intro {
+    color: rgb(71, 117, 155);
+ }
+
+ The font-size property is used to set the size of the text.
+
+ .intro {
+    font-size: 32px;
+   }
+
+   The em size unit is another way to set the size of the text.
+
+   1em is equal to the font size set on the parent element of the current element we are styling.
+   By default, 1em = 16px

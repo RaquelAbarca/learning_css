@@ -1,0 +1,52 @@
+HTML elements appear as boxes. 
+The box model defines how the different parts of the box -  margin, border, padding, and content, work together to create the box.
+Here are the parts of the box:
+
+The content box is the area where the content is displayed.
+
+The padding box is the white space around the content.
+
+The border box comes after the padding.
+
+The margin box is the last one and defines the space between this box and other elements.
+
+
+
+In the standard box model, the height and width attributes define the size of the content box.
+Any padding and border is then added to that width and height to get the total size of the box.
+For example, the total width of the box with paddings will be the sum of width plus padding left and padding right.
+
+The margin is not counted towards the actual size of the box, it is the space outside the box.
+
+
+
+The margin is the space around your box.
+
+We can control all margins of an element at once using the margin property, in the following order: top, right, bottom, and left. 
+
+The margins can be provided using separate properties.
+
+The following style:
+
+margin: 5px 10px 5px 10px; 
+
+is equivalent to:
+
+margin-top: 5px;
+margin-right: 10px;
+margin-bottom: 5px;
+margin-left: 10px; 
+
+
+
+
+
+The padding is the area between the border and the content. 
+
+It is defined similar to the margin:
+
+p {
+  margin: 5px 10px 5px 10px;
+  padding: 4px 7px 4px 7px;
+  border: 3px solid black;
+} 

@@ -1,0 +1,38 @@
+change the font of the text using the font-family property.
+
+.intro {
+  font-family: Arial;
+ }
+ 
+The given font needs to be available on the user's computer to work.
+There are only a certain number of fonts that are generally available across all systems. These are called web safe fonts and include: Arial, Courier New, Georgia, Times New Roman, Trebuchet MS, Verdana.
+
+It's a common practice to define multiple fonts in the font-family property, so that if the first one is not available on for the user, the browser will try the next one:
+
+.intro {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+If the font name consists of multiple words, it has to be in quotes.
+
+
+
+
+The font-style property is used to make text italic:
+
+.intro {
+  font-style: italic;
+}
+
+
+
+
+
+The font-weight property is used to make the text bold.
+
+.intro {
+  font-weight: bold;
+ }
+ You can also define the font weight with a number from 100 (thin) to 900 (thick). 400 is the same as normal, and 700 is the same as bold.
+
+ 

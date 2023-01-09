@@ -1,0 +1,94 @@
+The text-transform property allows transform text with the following values:
+
+uppercase: Transforms the text to capitals.
+
+lowercase: Transforms the text to lower case.
+
+capitalize: Transforms all words to have the first letter capitalized.
+
+.intro {
+  text-transform: uppercase;
+}
+.outro {
+  text-transform: capitalize;
+}
+
+
+
+
+
+The text-decoration property supports the following values:
+
+none: removes any decoration.
+
+underline: underlines the text.
+
+overline: gives the text an overline.
+
+line-through: puts a strikethrough over the text.
+
+.intro {
+  text-decoration: underline;
+}
+.outro {
+  text-decoration: line-through;
+} 
+
+
+
+
+
+The text-shadow property allows you to set a shadow for the text.
+It takes 4 values, like this:
+
+h1 {
+  text-shadow: 3px 2px 3px red;
+} 
+
+The first value is the horizontal offset of the shadow.
+
+The second value - the vertical offset.
+
+The third value is the blur radius: a higher value means the shadow is dispersed more widely.
+
+The last one is the color of the shadow.
+
+You can add multiple shadows, by separating them with a comma.
+For example:
+
+h1 {
+  text-shadow: 3px 2px 3px red,
+  2px 2px 1px blue;
+}
+
+
+
+
+The text-align property is used to control how text is aligned within its container. 
+
+The supported values are: left, right, center, justify.
+
+h1 {
+  text-align: center;
+}
+
+
+
+The line-height property sets the height of each line of text. 
+.intro {
+  line-height: 1.8;
+} 
+
+
+
+
+
+
+The letter-spacing and word-spacing properties allow you to set the spacing between letters and words in your text. 
+
+For example:
+
+.intro {
+  letter-spacing: 3px;
+  word-spacing: 3px;
+} 

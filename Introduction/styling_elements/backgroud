@@ -1,0 +1,39 @@
+The background-color property sets the background color for an element.
+
+.box {
+  background-color: red;
+  height:100px;
+  padding: 10px;
+} 
+
+
+You can also set an image as the background of an element, using the background-image property.
+It has the following syntax:
+
+.box {
+  background-image: url('sl-logo.png');
+  height:150px;
+  padding: 10px;
+}
+
+The image address has to be put in quotes and enclosed by the url() attribute.
+A small image is, by default, tiled to fill the box.
+In case the image is larger than the element, it is not scaled down by default and we will see only the part that fits in the box.
+
+The background-repeat property can control how the image is tiled (or repeated) in the box.
+It can take the following values:
+
+no-repeat: does not tile the image.
+
+repeat-x: repeat horizontally.
+
+repeat-y: repeat vertically.
+
+repeat: repeat in both directions (default value).
+
+.box {
+    background-image: url('sl-logo.png');
+    background-repeat: repeat-x;
+    height:150px;
+    padding: 10px;
+  } 
