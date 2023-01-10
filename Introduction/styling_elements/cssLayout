@@ -1,0 +1,82 @@
+Let's add background colors and borders to the <p> and <b> elements to see how they are laid out on the page:
+
+p {
+  background-color: red;
+  border: 1px solid blue;
+  padding: 5px;
+}
+b {
+  background-color: yellow;
+  border: 1px dashed black;
+} 
+
+The display property can be used to change how elements behave, making them behave as block or inline elements.
+
+For example, let's make the inline <b> elements behave as block elements:
+
+b {
+  background-color: yellow;
+  border: 1px dashed black;
+  display: block;
+} 
+
+
+Another value of display is flex.
+
+It is used to arrange elements in rows and columns.
+
+Consider three article elements on the page, wrapped inside a section:
+
+<section>
+  <article>First section</article>
+  <article>Second section</article>
+  <article>Third section</article>
+</section>
+
+They are block elements and will appear on separate lines, each of them taking the whole width of the section.
+We have also added some colors and styles to the CSS, so we can distinguish the article elements.
+
+display:flex; to the section, it will make the articles inside it act as flex items and arrange in columns:
+
+section {
+  display: flex;
+}
+
+The flex items take equal widths, to fill up the width of their container.
+
+By default, the flex items take equal space.
+We can control what proportion of space flex items take up compared to the other items using the flex property.
+For example, let's give the first article the flex value of 2, while the other two will have the flex value of 1:
+
+article {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+}
+.special {
+  flex: 2;
+} 
+
+Let's create a real website layout. It will include a header and footer, spanning the whole width of the page, and two columns for the main content, one taking up 3 times as much space as the other.
+
+<header>My Header</header>
+<main>
+  <section class="content">Main Section</section>
+  <section class="side">Side Section</section>
+</main>
+<footer>My Footer</footer>
+
+The layout will also act responsive and maintain the structure for any browser width.Let's create a real website layout. It will include a header and footer, spanning the whole width of the page, and two columns for the main content, one taking up 3 times as much space as the other.
+
+Here is the HTML:
+
+<header>My Header</header>
+<main>
+  <section class="content">Main Section</section>
+  <section class="side">Side Section</section>
+</main>
+<footer>My Footer</footer>
+
+The layout will also act responsive and maintain the structure for any browser width.

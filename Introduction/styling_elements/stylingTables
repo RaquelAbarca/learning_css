@@ -1,0 +1,46 @@
+basic styles:
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border:1px solid black;
+  text-align: center;
+} 
+
+The table cells have spacing between them by default, making double borders appear. The border-collapse property sets the borders to collapse into one, making the table look a lot better.
+
+We can also provide some padding to the cells, to give the content some space to "breathe":
+
+td, th {
+  border:1px solid black;
+  padding: 10px;
+  text-align: center;
+} 
+
+background color to heading cells:
+
+th {
+  background-color: #d3d3d3;
+}
+
+
+CSS provides the nth-child() pseudo selector, which allows you to select specific rows and style them.
+For example, we can style the 3rd row like this:
+
+tr:nth-child(3) {
+    background-color: #b0d1e4;
+} 
+
+The nth-child selector allows you to also define rules for the rows, instead of providing the number.
+For example, we can style the odd and even rows separately, giving them different background colors:
+
+tr:nth-child(even) {
+  background-color: #b0d1e4;
+}
+tr:nth-child(odd) {
+  background-color: #6aabd1;
+} 
+
+This will automatically apply the assigned styles to the odd and even rows.

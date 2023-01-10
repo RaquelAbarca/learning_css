@@ -1,0 +1,49 @@
+input {
+  border: 1px solid green;
+  width: 100%;
+  padding: 5px;
+}
+label {
+  font-weight: bold;
+  color: green;
+}
+
+The style will also apply to the button
+
+We can target the input elements by their type using the following syntax:
+
+input[type='text'] {
+  border: 1px solid green;
+  width: 100%;
+  padding: 5px;
+} 
+
+This will only apply the style to <input type="text"> elements.
+
+We can also style the text inside the text fields, just like any other text.
+
+input[type='text'], input[type='email'] {
+  border:1px solid green;
+  width:100%;
+  padding: 5px;
+  color: green;
+  font-weight: bold;
+} 
+
+
+Similarly, we can apply a style to our button:
+
+input[type='button'] {
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+} 
+We used border:none to remove the default border from the button.
+we can use the :hover pseudo selector to style the button, when it is hovered:
+
+input[type='button']:hover {
+  background-color: gray;
+} 

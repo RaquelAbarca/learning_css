@@ -1,0 +1,71 @@
+A link is by default blue in color and underlined. 
+
+We can style links with CSS properties (e.g., color, font-family, background, etc.).
+
+a {
+  color: green;
+} 
+
+In addition, links can be styled differently, depending on what state they are in. The following selectors are available:
+
+a:link - defines the style for normal unvisited links.
+
+a:visited - defines the style for visited links.
+
+a:active - a link becomes active once you click on it.
+
+a:hover - a link is hovered when the mouse is over it.
+
+a {
+  color: green;
+}
+a:hover {
+  background-color: yellow;
+}
+
+By default, all links are underlined.
+
+We can remove the underline using the text-decoration property:
+
+a {
+  color: green;
+  text-decoration: none;
+ }
+
+
+
+
+
+
+ It is common to style links as buttons and use them for navigation menus.
+
+First, we put the links inside an unordered list:
+
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contacts</a></li>
+</ul> 
+
+Now, the CSS:
+
+li {
+  display: inline;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 1%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 31%;
+  color: white;
+  background-color: green;
+}
+a:hover {
+  background: blue;
+} 
+
+We set the display property to inline for list items to make them sit on the same line with the others, acting as inline elements.

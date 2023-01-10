@@ -1,0 +1,95 @@
+The float property allows you to float an element inside a container.
+
+For example, we can float an image in a text, to make the text wrap on one side of it:
+
+img {
+    float: left;
+}
+
+The supported values are left and right.
+
+
+
+Positioning 
+To fine-tune the position of elements on the page, the position property can be used.
+
+There are a number of different values the position property supports, changing the way the element is positioned.
+
+By default, all elements have the position:static, which is the normal flow.
+
+
+
+Relative Position 
+With position: relative; the element is positioned relative to its normal position. 
+The properties top, right, bottom, and left can be used to specify how the element will be shifted.
+
+For example:
+
+.special {
+  position: relative;
+  bottom: 30px;
+  background-color: orange;
+} 
+
+This will shift the element 30px from the bottom.
+
+The content of relatively positioned elements can be moved and overlap other elements, but the reserved space for the element is still preserved in the normal flow.
+
+
+
+
+
+Absolute Position 
+An absolutely positioned element is removed from the normal flow of the page. 
+This is useful, for example, to create popup boxes, control menus, panels, etc.
+
+For example:
+
+.special {
+  position: absolute;
+  top:30px;
+  left: 20px;
+  background-color: orange;
+} 
+
+This will make the element position 30px from the top of the page and 20px from the left.
+The element's position is relative to the first positioned parent element: for example, you could absolutely position an element inside a relatively positioned container.
+
+
+
+
+
+
+Fixed Position 
+Fixed positioning makes the element stick to a part of the visible area, which means it always stays in the same place even if the page is scrolled.
+
+For example:
+
+.special {
+  position: fixed;
+  bottom: 30px;
+  background-color: orange;
+}
+
+This makes the element stick to the bottom of the page, shifted by 30px.
+
+
+
+
+z-index 
+When elements are positioned outside the normal flow, they can overlap other elements.
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+
+For example: 
+
+article {
+  position: relative;
+  z-index: 2;
+}
+.special {
+  z-index: 1;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+
+By default, the orange box would be above the article elements, however we made it go under them using a lower z-index value.

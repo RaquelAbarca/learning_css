@@ -1,0 +1,38 @@
+By default, unordered list items are marked with round bullets, while ordered lists are numbered.
+
+The list-style-type property allows you to change the markers to circle, square, decimal, disc, lower-alpha, lower-roman, etc.
+
+ul {
+  list-style-type: square; 
+}
+
+
+
+The list-style-position property specifies the position of the bullets: inside or outside.
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+
+
+
+The list-style-image property can be used to specify an image to be used as the list item marker.
+
+ul {
+  list-style-image: url("bullet.jpg");
+} 
+
+However, this property does not allow you to control the position and size of the image.
+
+If you want to use an image as the marker, it's better to set the list-style-type to none and add a background image to the list items with the marker image, positioning it to the left.
+
+
+
+
+The list-style property is a shorthand for setting list-style-type, list-style-image and list-style-position, all in one declaration:
+
+ul {
+ list-style: square outside none;
+}
